@@ -1,0 +1,90 @@
+export interface Bond {
+  code: string;
+  tenor: string;
+  coupon: number;
+  ytm: number;
+  price: number;
+  risk: 'Sovereign' | 'AAA' | 'AA';
+  maturityDate?: string;
+}
+export const bonds: Bond[] = [{
+  code: 'GSEC-2034',
+  tenor: '10Y',
+  coupon: 7.1,
+  ytm: 7.18,
+  price: 98.6,
+  risk: 'Sovereign',
+  maturityDate: '2034-06-15'
+}, {
+  code: 'GSEC-2029',
+  tenor: '5Y',
+  coupon: 6.85,
+  ytm: 6.92,
+  price: 99.2,
+  risk: 'Sovereign',
+  maturityDate: '2029-03-20'
+}, {
+  code: 'GSEC-2027',
+  tenor: '3Y',
+  coupon: 6.65,
+  ytm: 6.7,
+  price: 99.5,
+  risk: 'Sovereign',
+  maturityDate: '2027-08-10'
+}, {
+  code: 'T-BILL-364D',
+  tenor: '364D',
+  coupon: 0,
+  ytm: 6.75,
+  price: 93.7,
+  risk: 'Sovereign',
+  maturityDate: '2025-12-15'
+}, {
+  code: 'T-BILL-182D',
+  tenor: '182D',
+  coupon: 0,
+  ytm: 6.85,
+  price: 96.6,
+  risk: 'Sovereign',
+  maturityDate: '2025-06-20'
+}, {
+  code: 'T-BILL-91D',
+  tenor: '91D',
+  coupon: 0,
+  ytm: 6.9,
+  price: 98.3,
+  risk: 'Sovereign',
+  maturityDate: '2025-03-15'
+}, {
+  code: 'SDL-MH-2032',
+  tenor: '8Y',
+  coupon: 7.35,
+  ytm: 7.42,
+  price: 98.8,
+  risk: 'AAA',
+  maturityDate: '2032-11-25'
+}, {
+  code: 'SDL-KA-2030',
+  tenor: '6Y',
+  coupon: 7.2,
+  ytm: 7.28,
+  price: 99.0,
+  risk: 'AAA',
+  maturityDate: '2030-09-18'
+}, {
+  code: 'CORP-HDFC-2028',
+  tenor: '4Y',
+  coupon: 7.5,
+  ytm: 7.58,
+  price: 99.3,
+  risk: 'AAA',
+  maturityDate: '2028-05-12'
+}, {
+  code: 'CORP-ICICI-2027',
+  tenor: '3Y',
+  coupon: 7.4,
+  ytm: 7.48,
+  price: 99.4,
+  risk: 'AAA',
+  maturityDate: '2027-07-22'
+}];

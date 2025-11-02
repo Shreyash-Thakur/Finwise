@@ -1,0 +1,26 @@
+{
+  "name": "finwise-fullstack",
+  "version": "1.0.0",
+  "description": "FinWise Personal Finance Management Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "seed": "cd backend && npm run seed",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": [
+    "fintech",
+    "personal-finance",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "FinWise Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.10"
+  }
+}

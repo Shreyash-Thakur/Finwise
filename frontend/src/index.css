@@ -1,0 +1,93 @@
+/* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* DO NOT DELETE THESE TAILWIND IMPORTS, OTHERWISE THE STYLING WILL NOT RENDER AT ALL */
+
+/* Global Theme CSS Variables - Single Source of Truth */
+:root {
+  /* Dark theme (default) */
+  --bg: 11 18 32; /* #0B1220 */
+  --card: 15 23 42; /* #0F172A */
+  --text: 230 237 245; /* #E6EDF5 */
+  --text-muted: 148 163 184; /* #94A3B8 */
+  --border: 35 50 77; /* #23324D */
+  --muted: 51 65 85; /* #334155 */
+  --accent: 59 130 246; /* #3B82F6 */
+  --accent-hover: 96 165 250; /* #60A5FA */
+  --positive: 34 197 94; /* #22C55E */
+  --negative: 239 68 68; /* #EF4444 */
+  --warning: 245 158 11; /* #F59E0B */
+  
+  /* Chart colors */
+  --chart-primary: 59 130 246;
+  --chart-secondary: 20 184 166;
+  --chart-tertiary: 167 139 250;
+  --chart-grid: 51 65 85;
+  --chart-axis: 71 85 105;
+  --chart-text: 148 163 184;
+}
+
+html[data-theme='light'] {
+  /* Light theme */
+  --bg: 248 250 252; /* #F8FAFC */
+  --card: 255 255 255; /* #FFFFFF */
+  --text: 15 23 42; /* #0F172A */
+  --text-muted: 71 85 105; /* #475569 */
+  --border: 226 232 240; /* #E2E8F0 */
+  --muted: 241 245 249; /* #F1F5F9 */
+  --accent: 37 99 235; /* #2563EB */
+  --accent-hover: 29 78 216; /* #1D4ED8 */
+  --positive: 22 163 74; /* #16A34A */
+  --negative: 220 38 38; /* #DC2626 */
+  --warning: 217 119 6; /* #D97706 */
+  
+  /* Chart colors */
+  --chart-primary: 37 99 235;
+  --chart-secondary: 13 148 136;
+  --chart-tertiary: 139 92 246;
+  --chart-grid: 226 232 240;
+  --chart-axis: 203 213 225;
+  --chart-text: 100 116 139;
+}
+
+/* Apply theme colors */
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--text));
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Smooth theme transitions */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+  }
+  
+  * {
+    box-shadow: none !important;
+  }
+}
+
+/* Print view specific */
+.print-view {
+  background: white !important;
+  color: black !important;
+}
+
+.print-view * {
+  background: white !important;
+  color: black !important;
+  border-color: #e5e7eb !important;
+}

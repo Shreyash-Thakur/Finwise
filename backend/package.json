@@ -1,0 +1,52 @@
+{
+  "name": "finwise-backend",
+  "version": "1.0.0",
+  "description": "Production-ready Express + MongoDB backend for FinWise personal finance app",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "format": "prettier --write src/**/*.js",
+    "seed": "node src/scripts/seed.js"
+  },
+  "keywords": [
+    "fintech",
+    "personal-finance",
+    "express",
+    "mongodb",
+    "javascript"
+  ],
+  "author": "FinWise Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.1",
+    "bcrypt": "^5.1.1",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^8.2.1",
+    "express-session": "^1.18.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "rate-limiter-flexible": "^4.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "nodemon": "^3.0.2",
+    "prettier": "^3.1.1"
+  }
+}

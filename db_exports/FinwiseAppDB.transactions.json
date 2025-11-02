@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "6904a90e58fef12e4b942cd8"
+  },
+  "userId": "user_id_here",
+  "type": "Expense",
+  "category": "Groceries",
+  "amount": 2300,
+  "date": {
+    "$date": "2025-10-25T00:00:00.000Z"
+  }
+}]

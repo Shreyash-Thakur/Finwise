@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "6904a91958fef12e4b942cdb"
+  },
+  "userId": "user_id_here",
+  "goalName": "Emergency Fund",
+  "targetAmount": 50000,
+  "currentAmount": 12000
+}]
